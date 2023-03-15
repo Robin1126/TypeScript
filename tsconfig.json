@@ -1,0 +1,28 @@
+{
+	/*
+		"include" 用来指定哪些ts文件需要被编译
+		路径：** 表示任意目录
+			* 表示任意文件
+		"exclude" 不需要被编译的文件目录
+		默认值：["node_modules","bower_components","jspm_packages"]
+	
+	*/
+	"include" : ["code/chapter01/part2/*"],
+	// "exclude":
+	"compilerOptions" : {
+		//target 用来指定ts被编译的js版本， 默认转换成es3版本
+		// "es3","es6"等等
+		"target" : "es6" ,
+		
+		// 指定要使用的模块化规范
+		"module" : "es2015",
+		// 指定编译需要使用的库
+		// "lib":[]
+		// 希望编译后的js文件放在哪里
+		"outDir": "./code/chapter01/out"
+		// outFile 可以将编译后的js文件合并成一个文件
+		// 模块化必须是system或者是amd，在上面的module中设置
+	}
+	
+	
+}
